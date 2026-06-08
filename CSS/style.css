@@ -1,0 +1,116 @@
+body {
+    background-color: #FFEECC;
+    margin: 20px; 
+cursor: url("../Images/cursor.png"), auto;}
+
+main{
+    margin: 20px;
+}
+
+h1{
+    color: #46425E; 
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 60px;
+    text-align: center;
+}
+
+.navbar ul{
+    list-style-type: none; /*remove bulletpoints*/
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 20px;
+    text-decoration: none; /*remove underline*/
+    background-color: #FF6973;
+    overflow: hidden;
+    border-radius: 20px; /*rounded corners*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 40px;
+
+}
+
+/*hover color*/
+.navbar button:hover{ /*changes color of link when hovered over*/
+    color: #46425E
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    color: #FFEECC;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+
+.navbar button{
+    font-size: 20px;
+    background-color: #00B9BE;
+    color: #FFEECC;
+    font-family: "Pixelify Sans", sans-serif;
+    border-radius: 15px; 
+    border: none;
+}
+
+.full-screen-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-start {
+    position: relative;
+    width: 100%;
+}
+
+.image-start img {
+    display: block;
+    width: 100%;
+}
+
+.start {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-family: "Pixelify Sans", sans-serif;
+    background-color: #FFEECC;
+    border: none;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 15px;
+    color: #FF6973;
+    padding: 10px 20px;
+}
+
+/* hover color */
+.start:hover {
+    color: #00B9BE;
+}
+
+h2{
+        color: #FF6973; 
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+h3{
+    color: #FF6973; 
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 30px;
+}
+
+p{
+        font-family: "Indie Flower", sans-serif;
+        color: #46425E; 
+}
