@@ -1,2 +1,3 @@
 # 25SP-ITSE2302-B-Steakley
-Repository Purpose: Storage location for website Website Descrition
+Repository Purpose: Storage location for website 
+Website Descrition: Pookie Pomodoeo is the ultimate productivity site where users can manage their to do lists, routines, create reminders, etc., all while earning rewards to customiza and take care of their own personalized avatar, or Pookie. Completing planned tasks successfully and by the deadline allows the user to earn dabloons with wich they are required to feed and care for their Pookie to keep them alive. Extra customizations, hobbies, adventures and even more Pookies can be created with the earned dabloons.  
