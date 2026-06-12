@@ -1,24 +1,32 @@
+/*Whole page */
+
 body {
     background-color: #FFEECC;
     margin: 20px; 
-cursor: url("../Images/cursor.png"), auto;}
-
-main{
-    margin: 20px;
+    /*changes cursor to specified file*/
+    cursor: url("../Images/chiikawa normal.cur"), auto;
 }
 
-h1{
-    color: #46425E; 
-    font-family: "Pixelify Sans", sans-serif;
-    font-size: 60px;
-    text-align: center;
+a,
+button,
+.start {
+    /*changes pointer to specified file when hovering over buttons/
+    interacting with links*/
+    cursor: url("../Images/chiikawa link.cur"), pointer;
+}
+
+/*top of the page: Logo, Navbar, and Header 1*/
+
+.navbar {
+    display: flex; /*makes items line up horizontally*/
+    justify-content: space-between; /*lines up first element on the left and the last on the right, others equally spaced*/
+    align-items: center; /*elements site on the same line horizontally*/
+    width: 100%; 
 }
 
 .navbar ul{
     list-style-type: none; /*remove bulletpoints*/
-    font-family: "Pixelify Sans", sans-serif;
     font-size: 20px;
-    text-decoration: none; /*remove underline*/
     background-color: #FF6973;
     overflow: hidden;
     border-radius: 20px; /*rounded corners*/
@@ -30,78 +38,83 @@ h1{
 
 }
 
-/*hover color*/
-.navbar button:hover{ /*changes color of link when hovered over*/
-    color: #46425E
+
+.navbar a {
+    background-color: #00B9BE;
+    color: #FFEECC;
+    text-decoration: none; /*remove underline*/
+    padding: 2px 10px;
+    border-radius: 15px;
+    font-family: "Pixelify Sans", sans-serif;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+.navbar a:hover { /*changes color of link when hovered over*/
+    color: #46425E;
 }
 
-.logo {
+.logo { /*logo in nav bar*/
     color: #FFEECC;
     font-family: "Pixelify Sans", sans-serif;
     font-size: 28px;
     font-weight: 700;
 }
 
-
-.navbar button{
-    font-size: 20px;
-    background-color: #00B9BE;
-    color: #FFEECC;
-    font-family: "Pixelify Sans", sans-serif;
-    border-radius: 15px; 
-    border: none;
+.color1{ /*dual tone of the logo*/
+    color: #46425E;
 }
 
-.full-screen-img {
+h1{ /*Welcome Pookies Header*/
+    background-color: #FF6973;
+    color: #FFEECC; 
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 60px;
+    text-align: center;
+    border-radius: 20px; 
+}
+
+/*Animated Image Section*/
+
+.full-screen-img { /*adjusts size of image to the parent container*/
     width: 100%;
-    height: auto;
+    height: auto; /*adjusts hight to be proportional to the width*/
     display: block;
 }
 
 .image-start {
-    position: relative;
+    position: relative; /*Allows button to be placed on top*/
     width: 100%;
 }
 
-.image-start img {
-    display: block;
-    width: 100%;
-}
-
-.start {
+.start { 
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
+    top: 50%; /*moves button halfway down the image*/
+    left: 50%; /*moves button halfway over fromthe left of the image*/
+    transform: translate(-50%, -50%); /*centers start button*/
     font-family: "Pixelify Sans", sans-serif;
     background-color: #FFEECC;
     border: none;
     font-size: 25px;
-    text-align: center;
+    text-align: center; 
     text-decoration: none;
     border-radius: 15px;
     color: #FF6973;
     padding: 10px 20px;
 }
 
-/* hover color */
-.start:hover {
+
+.start:hover { /* hover color for start button*/
     color: #00B9BE;
 }
 
 h2{
-        color: #FF6973; 
+    color: #ffb0a3; 
     font-family: "Pixelify Sans", sans-serif;
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
+}
+
+.color2{ /*dual tone of h2*/
+    color: #FF6973;
 }
 
 h3{
@@ -110,7 +123,66 @@ h3{
     font-size: 30px;
 }
 
-p{
-        font-family: "Indie Flower", sans-serif;
-        color: #46425E; 
+p{ 
+    font-family: "Indie Flower", sans-serif;
+    color: #FFEECC; 
+    background-color: #00B9BE;
+    padding: 10px 20px;
+    border-radius: 15px;
+
+}
+
+.info-box {
+    background-color: #18B7C0;
+    border-radius: 15px;
+    box-shadow: 18px 18px 0 #4E4A73;
+}
+
+/*The about section includes:
+What's This all about and a text box*/
+
+.about-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+    margin: 50px;
+}
+
+.about-header { /*adds a purple shadow displaced behind the blue background of the text*/
+    background-color: #4E4A73;
+    border-radius: 20px;
+    min-width: 200px;
+    text-align: center;
+}
+
+.about-header h2 {
+    color: #FFA6A6;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 50px;
+    margin: 0;
+}
+
+
+/*This is for the How Do I Get Started section, 
+similar functions as about section*/
+.start-section {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row-reverse; /*flips the header and text positions to be opposite (header right, text left)*/
+    gap: 50px;
+    margin: 50px;
+}
+
+.start-header {
+    background-color: #4E4A73;
+    border-radius: 20px;
+    min-width: 200px;
+    text-align: center;
+}
+
+.start-header h2 {
+    color: #FFA6A6;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 50px;
+    margin: 0;
 }

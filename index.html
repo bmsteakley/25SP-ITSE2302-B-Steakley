@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <title>Pookie Pomodoro!</title>
     <meta charset="UTF-8" />
@@ -15,44 +15,118 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/style.css" />
+    <!-- font for heading/titles/buttons -->
     <link
       href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"
       rel="stylesheet"
     />
+    <!-- font for body text -->
     <link
       href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Pixelify+Sans:wght@400..700&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
+    <!-- navigation bar for: logo, home link, login/sign up link, etc.  -->
     <nav class="navbar">
       <ul>
-        <div class="logo">Pookie<br />Pomodoro</div>
-        <!--fullscreen button-->
-        <!-- AFTER SIGN IN BE ABLE TO:
-                - music pop up box: change music, volume, add spotify/youtube playlist
-                - edit to do list
-                - see progress statistics-->
-        <a href="index.html"><button>Home</button></a>
-        <a href="about.html"><button>About</button></a>
-        <a href="login-signup.html"><button>Log In/Sign Up</button></a>
+        <li class="logo">
+          <!-- span used to assign specific portion of text to a different color -->
+          Po<span class="color1">okie</span><br />Po<span class="color1"
+            >modoro</span
+          >
+        </li>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="">Create</a>
+          <!--Page takes you to the basic pomodoro timer accessible without signing up-->
+        </li>
+        <li>
+          <a href="">Log In/Sign Up</a>
+          <!--When signed in, access more features like settings, dashboard, character customization, productivity tracker, etc.-->
+        </li>
+        <li>
+          <a href="">Contact</a>
+          <!--Contact form-->
+        </li>
       </ul>
     </nav>
     <h1>Welcome, Pookies!</h1>
     <div class="image-start">
+      <!-- css added to adjust image proportionaly to the size of the page-->
       <img
         src="Animations/stop_light.gif"
         alt="Stop Light Animation"
         class="full-screen-img"
       />
-      <a href="dashboard.html">
-        <button class="start button">~start~</button>
-      </a>
+      <a href="" class="start button">~start~</a>
+      <!-- link styled like a button-->
     </div>
-    <img
-      src="Images/placeholder-image.jpg"
-      alt="Placeholder for a character animation"
-    />
-    <script src="example.js"></script>
+    <!--The About Section-->
+    <div class="about-section">
+      <div class="about-header">
+        <h2>Wh<span class="color2">at's This All About?</span></h2>
+      </div>
+      <div class="info-box">
+        <p>
+          Pookie Pomodoro is a fun interactive site where you can fully
+          customize your productivity, with help from your personalized
+          character. Our oustanding features include to do lists, routines,
+          reminders, and a pomodoro timer all while focusing on making your
+          every-day daunting tasks a little less scary and more enjoyable.
+        </p>
+      </div>
+    </div>
+    <div class="start-section">
+      <div class="start-header">
+        <h2>Ho<span class="color2">w Do I Get Started?</span></h2>
+      </div>
+      <div class="info-box">
+        <p>That's easy! Just follow the steps below!</p>
+      </div>
+    </div>
+    <h3>Step 1: Sign Up FOR FREE</h3>
+    <div class="info-box">
+      <p>
+        Sign up to Pookie Pomodoro to access all features (not just our super
+        duper cute timer) so that your progress is saved and you can create your
+        own custom avatar, or as we like to call them, your very own pookie.
+      </p>
+    </div>
+    <br />
+    <h3>Step 2: Create Your Basic Pookie</h3>
+    <div class="info-box">
+      <p>
+        <!-- placeholder text, will be about the process of creating a custom avatar or pookie  -->
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        nunc arcu, convallis non convallis sit amet, varius at libero. Quisque
+        efficitur mollis convallis. Maecenas sit amet sagittis quam, eu
+        malesuada velit. Nulla congue gravida arcu in tempor.
+      </p>
+    </div>
+    <h3>Step 3: Assign Your First Task</h3>
+    <div class="info-box">
+      <p>
+        <!-- placeholder text, will be about the process of creating tasks/to dos, expectations, and recomendations for maximum productivity  -->
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        nunc arcu, convallis non convallis sit amet, varius at libero. Quisque
+        efficitur mollis convallis. Maecenas sit amet sagittis quam, eu
+        malesuada velit. Nulla congue gravida arcu in tempor.
+      </p>
+    </div>
+    <h3>Step 4: Earn Rewards</h3>
+    <div class="info-box">
+      <p>
+        <!-- placeholder text, will be about how to earn rewards, what they are for, and how to use them  -->
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        nunc arcu, convallis non convallis sit amet, varius at libero. Quisque
+        efficitur mollis convallis. Maecenas sit amet sagittis quam, eu
+        malesuada velit. Nulla congue gravida arcu in tempor.
+      </p>
+    </div>
+    <!-- includes some example console output when inspecting the site  -->
+    <script src="JavaScript/example.js"></script>
   </body>
 </html>
