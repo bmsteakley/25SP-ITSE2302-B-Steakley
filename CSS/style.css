@@ -1,5 +1,6 @@
 /*Whole page */
 
+
 body {
     background-color: #FFEECC;
     margin: 20px; 
@@ -185,4 +186,117 @@ similar functions as about section*/
     font-family: "Pixelify Sans", sans-serif;
     font-size: 50px;
     margin: 0;
+}
+
+/* ContactUs Page - Form */
+#contactForm {
+  width: 60%;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+/* Applies font and text color to the entire contact form */
+#contactForm {
+    font-family: "Indie Flower", sans-serif;
+  color: #46425e;
+      font-size: 20px;
+
+}
+
+/* Text Inputs */
+/* Styles text inside form boxes */
+#contactForm input[type="text"],
+#contactForm select,
+#contactForm textarea {
+  font-family: "Indie Flower", cursive;
+  font-size: 18px;
+  color: #FFEECC;
+
+  background-color: #00B9BE;
+  border: 2px solid #46425E;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+/*change color of radio button and checkbox when clicked*/
+#contactForm input[type="radio"],
+#contactForm input[type="checkbox"] {
+  accent-color: #ff6973;
+}
+
+
+/* Changes the text box border when the user clicks inside it */
+#contactForm input[type="text"]:focus {
+  outline: none;
+  border-color: #00b9be;
+}
+
+
+/* Message text area */
+#message {
+  width: 95%;
+  padding: 10px;
+  border: 2px solid #ff6973;
+  border-radius: 8px;
+  font-size: 16px;
+  resize: vertical;
+}
+
+
+/* Changes the text area border when selected */
+#message:focus {
+  outline: none;
+  border-color: #00b9be;
+}
+
+
+/* Drop-down Menu */
+#contactReason {
+  padding: 8px;
+  border: 2px solid #ff6973;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+
+/* Radio Buttons */
+#contactForm input[type="radio"] {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+
+/* Checkboxes */
+#contactForm input[type="checkbox"] {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+
+/* Labels next to radio buttons and checkboxes */
+#contactForm label {
+  margin-right: 15px;
+}
+
+
+/* Reset and Submit Buttons */
+#resetButton,
+#submitButton {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ff6973;
+    color: #FFEECC; 
+  font-size: 16px;
+  cursor: pointer;
+    font-family: "Indie Flower", cursive;
+}
+
+
+/* Changes button color when mouse hovers over it */
+#resetButton:hover,
+#submitButton:hover {
+  background-color: #00b9be;
 }
