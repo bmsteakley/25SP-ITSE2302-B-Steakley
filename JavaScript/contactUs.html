@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Pookie Pomodoro!</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Productivity site for to do lists, timers and tracking progress."
+    />
+    <meta
+      name="keywords"
+      content="pomodoro, timer, to do lists, tracker, productivity"
+    />
+    <meta name="author" content="Brianna Steakley" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <!-- font for heading/titles/buttons -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font for body text -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- navigation bar for: logo, home link, login/sign up link, etc.  -->
+    <nav class="navbar">
+      <ul>
+        <li class="logo">
+          <!-- span used to assign specific portion of text to a different color -->
+          Po<span class="color1">okie</span><br />Po<span class="color1"
+            >modoro</span
+          >
+        </li>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="">Create</a>
+          <!--Page takes you to the basic pomodoro timer accessible without signing up-->
+        </li>
+        <li>
+          <a href="">Log In/Sign Up</a>
+          <!--When signed in, access more features like settings, dashboard, character customization, productivity tracker, etc.-->
+        </li>
+        <li>
+          <a href="contactUs.html">Contact</a>
+          <!--Contact form-->
+        </li>
+      </ul>
+    </nav>
+    <form id="contactForm">
+      <h1>Contact Pookie Pomodoro!</h1>
+
+      <!-- Text input for first name -->
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" />
+
+      <br /><br />
+
+      <!-- Text input for email -->
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" />
+
+      <br /><br />
+
+      <!-- Radio buttons for Social Media and Friends -->
+      <p>How did you hear about us?</p>
+
+      <input
+        type="radio"
+        id="socialMedia"
+        name="heardFrom"
+        value="Social Media"
+      />
+      <label for="socialMedia">Social Media</label>
+
+      <input type="radio" id="friend" name="heardFrom" value="Friend" />
+      <label for="friend">Friend</label>
+
+      <br /><br />
+
+      <!-- Checkboxes for products interested in: Planner, Stickers, Timer -->
+      <p>Which of the following are you interested in?</p>
+
+      <input type="checkbox" id="pomodoroPlanner" name="items" value="12.99" />
+      <label for="pomodoroPlanner">Pomodoro Planner - $12.99</label>
+
+      <br />
+
+      <input type="checkbox" id="studyStickers" name="items" value="5.99" />
+      <label for="studyStickers">Study Sticker Pack - $5.99</label>
+
+      <br />
+
+      <input type="checkbox" id="deskTimer" name="items" value="19.99" />
+      <label for="deskTimer">Desk Timer - $19.99</label>
+
+      <br /><br />
+
+      <!-- Drop-down List to prompt fo reason for contact: question, purchas, feedback -->
+      <label for="contactReason">Reason for Contact:</label>
+
+      <select id="contactReason" name="contactReason">
+        <option value="General Question">General Question</option>
+        <option value="Purchase Request">Purchase Request</option>
+        <option value="Website Feedback">Website Feedback</option>
+      </select>
+
+      <br /><br />
+
+      <!-- Text area for any other comments user has -->
+      <label for="message">Message:</label>
+      <br />
+      <textarea id="message" name="message" rows="5" cols="40"></textarea>
+
+      <br /><br />
+
+      <!-- Reset fields and submit button -->
+      <input type="reset" id="resetButton" value="Reset" />
+      <input type="submit" id="submitButton" value="Submit" />
+    </form>
+    <script src="JavaScript/formValidation.js"></script>
+  </body>
+</html>
